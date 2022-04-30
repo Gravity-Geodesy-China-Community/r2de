@@ -1,0 +1,182 @@
+site_name: The Road to Data Engineer
+site_description: 通往数据工程师之路
+site_author: Gravpher@163.com
+site_url: https://r2de.goujianing.com/
+repo_name: George-Gou/r2de
+repo_url: https://github.com/George-Gou/r2de
+copyright: Brought to you by <a href="https://goujianing.ml/">Gravpher</a>. Available freely under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 license</a>.
+
+theme:
+  name: 'material'
+  language: 'zh'
+  palette:
+    - scheme: default
+      media: "(prefers-color-scheme: light)"
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换至深色模式
+    - scheme: slate
+      media: "(prefers-color-scheme: dark)"
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: 切换至浅色模式
+  icon:
+    logo: fontawesome/brands/linux
+    repo: octicons/mark-github-16
+  features:
+    - navigation.top
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - codehilite
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - markdown.extensions.def_list
+  - attr_list
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: octicons/globe-16
+      link: https://goujianing.ml/
+
+extra_javascript:
+  - js/katex.js
+  - https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js
+
+extra_css:
+  - css/katex.css
+  - css/custom.css
+  - https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css
+
+google_analytics:
+  - 'UA-160637954-1'
+  - 'auto'
+
+#plugins:
+   # - with-pdf:
+#plugins:
+  #  - with-pdf:
+        #author: WHO
+        #copyright: ANY TEXT
+        #
+        #cover: false
+        #back_cover: true
+        #cover_title: TITLE TEXT
+        #cover_subtitle: SUBTITLE TEXT
+        #custom_template_path: TEMPLATES PATH
+        #
+        #toc_title: TOC TITLE TEXT
+        #heading_shift: false
+        #toc_level: 3
+        #ordered_chapter_level: 2
+        #excludes_children:
+        #    - 'release-notes/:upgrading'
+        #    - 'release-notes/:changelog'
+        #
+        #exclude_pages:
+        #    - 'bugs/'
+        #    - 'appendix/contribute/'
+        #convert_iframe:
+        #    - src: IFRAME SRC
+        #      img: POSTER IMAGE URL
+        #      text: ALTERNATE TEXT
+        #    - src: ...
+        #two_columns_level: 3
+        #
+        #render_js: true
+        #headless_chrome_path: headless-chromium
+        #
+        #output_path: any-place/document.pdf
+        #enabled_if_env: ENABLE_PDF_EXPORT
+        #
+        #debug_html: true
+        #show_anchors: true
+        #verbose: true
+  
+nav:
+  - 前言: index.md
+  - I 计算机网络:
+      - 1 概述: Ch01/index.md
+      - 2 TCP/IP 协议: Ch01/TCP_IP_Contents.md 
+      - 3 网络安全基础: Ch01/internet_sercurity.md 
+  - II 操作系统:
+      - 1 概述: Ch02/index.md   
+      - 2 Linux 基础: Ch02/linux_basic.md
+  - III 数据结构与算法:
+      - 1 概述: Ch03/index.md
+      - 2 预备知识: Ch03/prepare.md     
+      - 3 数组结构: 
+        -  排序算法: Ch03/datastructure/array.md
+        -  搜索算法: Ch03/datastructure/linklist.md
+      - 4 算法: 
+        -  排序算法: Ch03/algorithm/sort.md
+        -  搜索算法: Ch03/algorithm/search.md
+      - 算法技巧: Ch03/program_trick.md
+  - IV 编程语言基础:
+      - 1 概述: Ch04/index.md
+      - 2 Java:  
+          - 2-1 Java基础: Ch04/JAVA/fundamental.md
+          - 2-2 Java框架: Ch04/JAVA/framework.md
+          - 2-3 Java Web项目实战: Ch04/JAVA/Java_web_project.md   
+      - 3 Python:
+          - 3-1 Python基础: Ch04/Python/fundamental.md
+          - 3-2 Python框架: Ch04/Python/framework.md
+          - 3-3 Python 项目实战: Ch04/Python/Python_web_project.md        
+      - 4 C++: 
+          - 4-1 C++基础: Ch04/C++/fundamental.md
+          - 4-2 C++框架: Ch04/Python/framework.md
+          - 4-3 C++ 项目实战: Ch04/Python/Python_web_project.md            
+      - 5 编程技巧: Ch04/program_trick.md    
+  - V 数据库:
+      - 1 概述: Ch05/index.md
+      - 2 SQL:  
+          - 2-1 Java基础: Ch05/Java/2-1.md
+          - 2-2 Java框架: Ch05/Java/2-2.md
+          - 2-3 Java Web项目实战: Ch05/Java/2-3.md   
+      - 3 MySQL: 
+          - 3-1 Java基础: Ch05/Python/3-1.md
+          - 3-2 Java框架: Ch05/Python/3-2.md
+          - 3-3 Java Web项目实战: Ch05/Python/3-3.md 
+      - 4 Redis: 
+          - 4-1 Java基础: Ch05/Python/3-1.md
+          - 4-2 Java框架: Ch05/Python/3-2.md
+          - 4-3 Java Web项目实战: Ch05/Python/3-3.md           
+  - VI 大数据:
+      - 1 概述: Ch06/index.md
+      - 2 大数据开源生态: Ch06/array.md
+      - 3 新闻数据分析项目实战: 
+          - 3-1 项目背景介绍: Ch06/news_project/background.md
+          - 3-1 Hadoop集群搭建: Ch06/news_project/hadoop.md
+          - 3-2 Java框架: Ch06/news_project/1-2.md
+          - 3-2 Java Web项目实战: Ch06/news_project/1-2.md   
+      - 3 Python: Ch06/array.md
+      - 4 链表: Ch06/linklist.md
+      - 编程技巧: Ch06/program_trick.md 
+  - VII 深度学习:
+      - 1 基本概念: Ch07/index.md
+      - 2 QuickStart:
+          - 7.1 Description of quicksort: Ch07/7.1.md
+      - 3 项目实战:
+          - 7.1 Earthquake Transformer: Ch07/eqt.md
+          - 8.2 Counting sort: Chap07/8.2.md
+  - VIII 面试专题:
+      - 1 面试介绍: Ch08/index.md
+      - 2 Python:
+          - 2-1 Python基础: Ch08/Python/fundamental.md      
+      - 3 java: 
+          - 3-1 java基础: Ch08/Java/fundamental.md 
+          - 3-2 java Web: Ch08/Java/framework.md          
+      - 4 计算机网络: Ch08/Internet.md
+      - 5 操作系统:     
+          - 5-1 Linux基础: Ch08/Problems/1-1.md
+          - 5-2 操作系统基础: Ch08/Problems/1-2.md
+      
