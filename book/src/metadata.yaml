@@ -1,0 +1,21 @@
+---
+title: Road to Data Engineer
+subtitle: 通往数据工程师之路
+author:          # 作者（数组）
+  - Gravpher(Jianing Gou)
+date: \today     # 日期
+lof: true        # 是否生成插图列表页
+lot: true        # 是否生成表格列表页
+homepage: https://gravitychina.ga/r2de
+identifier:                      # epub用
+  - scheme: DOI
+    text: doi:10.234234.234/33
+publisher: goujianing.ml       # epub用
+rights: © 2022 Jianing Gou   # epub用
+cover-image: images/cover.png    # epub用
+header-includes:
+  - \usepackage{zhlipsum}  
+# 不引用，但是显示在参考文献列表里。通配符 @* 表示全部在列表里显示  
+nocite: |
+  @pandocManual,@foz
+...
